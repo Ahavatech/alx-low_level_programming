@@ -9,6 +9,8 @@
  * _error - Read file.
  * @e: Error number
  * @filename: File name
+ * Description: does something
+ * Return void
  */
 void _error(int e, char *filename)
 {
@@ -23,6 +25,13 @@ void _error(int e, char *filename)
 		exit(99);
 	}
 }
+/**
+ * cp - copies a file
+ * @file_form: file form
+ * @file_to: file to
+ * Description: copies a file
+ * Return: void
+ */
 void cp(char *file_from, char *file_to)
 {
 	int fd_read, res_read, fd_write, res_write;
@@ -61,6 +70,13 @@ void cp(char *file_from, char *file_to)
 		exit(100);
 	}
 }
+/**
+ * main - main function
+ * @ac: argument count
+ * @av: argument variable
+ * Description: main function
+ * Return: integer
+ */
 int main(int ac, char *av[])
 {
 	if (ac != 3)
